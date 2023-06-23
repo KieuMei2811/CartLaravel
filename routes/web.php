@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/cart', function () {
+    return view('cart');
 });
+Route::get('add-to-cart/{id}',[App\Http\Controllers\ProductController::class,'getAddToCart'])->name('themgiohang');
+Route::get('del-cart/{id}',[App\Http\Controllers\ProductController::class,'getDelItemCart'])->name('xoagiohang');
+
+
+Route::get('check-out',[App\Http\Controllers\ProductController::class,'getCheckout'])->name('dathang');
+Route::post('check-out',[App\Http\Controllers\ProductController::class,'postCheckout'])->name('dathang');
