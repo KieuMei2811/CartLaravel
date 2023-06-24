@@ -37,7 +37,7 @@
                 <div class="ht-left">
                     <div class="mail-service">
                         <i class=" fa fa-envelope"></i>
-                        <b >hello.colorlib@gmail.com
+                        <b>hello.colorlib@gmail.com
                     </div>
                     <div class="phone-service">
                         <i class=" fa fa-phone"></i>
@@ -101,7 +101,7 @@
                                 </a>
                                 <div class="cart-hover">
                                     <div id="change-item-cart">
-                                </div>
+                                    </div>
                             </li>
                         </ul>
                     </div>
@@ -175,9 +175,10 @@
                                         </div>
                                         <ul>
                                             <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="/addcart/{{$product->id }}">+ Add Cart</a></li>
+                                            <li class="quick-view"><a href="addcart/{{$product->id }}">+ Add Cart</a></li>
                                             <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                         </ul>
+
                                     </div>
                                     <div class="pi-text">
                                         <div class="catagory-name">{{ $product->type }}</div>
@@ -193,9 +194,9 @@
                             @endforeach
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Product Shop Section End -->
@@ -296,8 +297,12 @@
                     <div class="col-lg-12">
                         <div class="copyright-text">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.facebook.com/thuy.huynhvan" target="_blank">Huynh Van Thuy</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> by <a href="https://www.facebook.com/thuy.huynhvan"
+                                target="_blank">Huynh Van Thuy</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">
                             <img src="Template/img/payment-method.png" alt="">
