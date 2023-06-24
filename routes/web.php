@@ -22,3 +22,7 @@ Route::get('del-cart/{id}',[App\Http\Controllers\ProductController::class,'getDe
 
 Route::get('check-out',[App\Http\Controllers\ProductController::class,'getCheckout'])->name('dathang');
 Route::post('check-out',[App\Http\Controllers\ProductController::class,'postCheckout'])->name('dathang');
+
+Route::get('/show',[App\Http\Controllers\ShoppingCartController::class , 'Index' ]);
+
+Route::get('/addcart/{id}',[App\Http\Controllers\ShoppingCartController::class , 'AddCart' ]);
